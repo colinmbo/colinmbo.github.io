@@ -6,13 +6,16 @@ body, h1, h2, h3, p, ul {
 
 /* Basic styles for the layout */
 body {
-  font-family: Arial, sans-serif;
+  background-color: #F9B365;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
+  text-align: center;
+  
+  image-rendering: pixelated;
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  color: #111;
   padding: 20px;
 }
 
@@ -22,16 +25,17 @@ nav ul {
 
 nav ul li {
   display: inline;
-  margin-right: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #111;
   text-decoration: none;
 }
 
 main {
-  padding: 20px;
+  padding: 20px 300px;
 }
 
 section {
@@ -47,6 +51,24 @@ section {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #333;
-  color: #fff;
+  color: #111;
+}
+
+a img {
+  width: 32px;
+  height: 32px;
+}
+
+a img.default {
+  display: inherit;
+}
+a img.hover {
+  display: none;
+}
+
+a:hover img.default {
+  display: none;
+}
+a:hover img.hover {
+  display: inherit;
 }
