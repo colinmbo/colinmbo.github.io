@@ -21,25 +21,84 @@
 
   <main>
 
+    <section>
+      <h1>'Untitled Adventure Game Development Project'</h1>
+      <h2>The following project is one that I've been wanting to make for a long time now. Originally inspired by Earthbound and the Paper Mario series, 
+        I wanted to make a game that could capture a similar sense of wonder that captivated me as a kid.
+      </h2>
+    </section>
+    
     <video width="960" height="540" autoplay muted loop playsinline>
       <source src="game_footage08.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
+
+    <section>
+      <h1>Starting out</h1>
+      <p>
+        The initial version of the project was made in Godot 3, but I started porting it over to Godot 4 during the alpha phase of the engine in the 
+        Summer of 2022, not knowing how much longer it would be until the final version was released. This wasn't the best idea, because it meant that 
+        my projects would break often while changes to the engine were being made. As a result, progress was stunted because most of my time was spent 
+        trying to understand the engine's undocumented libraries and adapting the game's scripts.
+        <br><br>
+        I wanted to begin development with the intention of building an 'emotional prototype,' a brilliant idea from the minds behind 'Outer Wilds'. 
+        In short, defining the atmosphere and feeling that I want the game to convey. As an artist, this allowed me to put most of my time into the game's 
+        art direction and music.
+      </p>
+    </section>
 
     <video width="960" height="540" autoplay muted loop>
       <source src="game_footage02.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 
+    <section>
+      <h1>Art direction and issues</h1>
+      <p>
+        The game's art direction is inspired by the Nintendo DS and games like Pokemon, along with the Mother series and many other games from the early 
+        2000s and late 1990s. I knew I wanted to combine 2D pixel art with 3D environments, and this meant a lot of time would need to be spent developing 
+        shaders to render scenes appropriately. Certain design decisions, such as using fixed camera angles, were put in place to sell the effect. 
+        <br><br>
+        The biggest hurdle thus far regarding the graphics has been animation, which is very time consuming to get right. Also, due to entities being 
+        2-dimensional, I would need to draw each animation (idle, running, jumping, etc.) from 8 different viewing angles. Really, I only needed to animate 
+        from 5 viewing angles, because the remaining 3 could simply be mirrored across the Y axis. Even still, this would take an enormous amount of time 
+        to get looking right. As shown in the video above, I tried getting around this by using a 3D model for the body, rendered at a low resolution in 
+        combination with a screen-space outline shader I wrote; however, I experienced issues with facial features not showing up properly, so I opted to 
+        use a 2D sprite for the head to maintain sharpness and clarity.
+      </p>
+    </section>
+
     <video width="960" height="540" autoplay muted loop>
       <source src="game_footage03.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 
+    <section>
+      <h1>Tracing everything</h1>
+      <p>
+        While this worked decently enough, I wasn't satisfied with the outlining around the character's limbs, and I ultimately decided to render each 
+        animation of the model from 8 viewing angles before roughly tracing over it and cleaning up the linework. I intend on using this method for other 
+        entities in the game that need to be drawn from different viewing angles in order to maintain 3-dimensional accuracy.
+      </p>
+    </section>
+
     <video width="960" height="540" autoplay muted loop>
       <source src="game_footage04.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
+
+    <section>
+      <h1>What's next</h1>
+      <p>
+        There is much more to this project than what I've covered here, and I plan on adding more information and screenshots when I get the chance. Some 
+        topics I want to discuss in the future include the game design plan, the logic behind entity pathfinding, seamless room transitions, my custom 
+        dialogue system, more shader stuff, and the large amount of cut-content that has accumulated along the way.
+        <br><br>
+        Below is various footage from different stages of development. If you are interested, consider 
+        <a href="https://www.instagram.com/fluddformat?igsh=OG9veDIzNG9xbTh0&utm_source=qr">following my development on instagram.</a> 
+        Thanks for reading!
+      </p>
+    </section>
 
     <video width="960" height="540" autoplay muted loop>
       <source src="game_footage05.mp4" type="video/mp4">
